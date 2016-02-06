@@ -8,9 +8,12 @@ Maintainer: Jonghyun Choi (ppolon@gmail.com)
 ## Usage
 
 ```MATLAB
-The usage is quite easy:
-Input_Im = imread('image.jpg');
-feaVec = main(Input_Im, 9, 9, [4 6]);
+regionrow = 9; % number of rows of the divided regions
+regioncol = 9; % number of cols of the divided regions
+radius = [4 6]; % radius of two coaxial circles
+
+img = imread('image.jpg');
+feaVec = main(img, regionrow, regioncol, radius);
 ```
 
 ## Reference
